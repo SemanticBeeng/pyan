@@ -834,15 +834,15 @@ def main():
     v.cull_inherited()
     
     if options.dot:
-        print v.to_dot(draw_defines=options.draw_defines,
+        print(v.to_dot(draw_defines=options.draw_defines,
                        draw_uses=options.draw_uses,
                        colored=options.colored,
                        grouped=options.grouped,
                        nested_groups=options.nested_groups,
-                       rankdir=options.rankdir)
+                       rankdir=options.rankdir))
     if options.tgf:
-        print v.to_tgf(draw_defines=options.draw_defines,
-                       draw_uses=options.draw_uses)
+        print(v.to_tgf(draw_defines=options.draw_defines,
+                       draw_uses=options.draw_uses))
 
 
 if __name__ == '__main__':
